@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constrainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttondegistir"
+        android:layout_width="128dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="143dp"
+        android:text="Change"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="176dp"
+        android:layout_height="227dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttondegistir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="313dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="64dp"
+        android:text="Color Rgb Code is:"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonbilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="30dp"
+        android:text="Info"
+        app:layout_constraintBottom_toTopOf="@+id/framelayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
